@@ -4,3 +4,13 @@ function toggleMenu() {
     menu.classList.toggle('open');
     icon.classList.toggle('open');
 }    
+
+(() => {
+    AOS.init({
+      easing: "ease",
+      duration: 1500,
+      once: true,
+    });
+    particlesJS.load("particles-js", "particles.json");
+
+})();
