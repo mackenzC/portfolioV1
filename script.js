@@ -3,6 +3,7 @@ function toggleMenu() {
     const icon = document.querySelector('.hamburger-icon');
     menu.classList.toggle('open');
     icon.classList.toggle('open');
+    
 }    
 
 (() => {
@@ -11,6 +12,4 @@ function toggleMenu() {
       duration: 1500,
       once: true,
     });
-    particlesJS.load("particles-js", "particles.json");
-
 })();

@@ -15,6 +15,11 @@ a, .btn {
     transition: all 300ms ease;
 }
 
+body {
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+ 
+}
 nav, .nav-link {
     display:flex;
 }
@@ -56,6 +61,10 @@ a:hover {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: green;
+    padding-bottom: 4rem;
 }
 
 /* HAMBURGER MENU */
@@ -256,25 +265,28 @@ section {
 /* ABOUT */
 
 #about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 80vh;
 }
 
 .profile-whole {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 800px;
     margin: 0 auto;
+    font-size: 1rem;
   }
   
   .profile-pic-about {
     width: 100%;
     max-width: 180px;
     margin: auto;
+    padding-right: 3rem;
   }
   
   .profile p {
