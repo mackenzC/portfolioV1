@@ -293,3 +293,45 @@ section {
     font-size: 2rem;
   }
   
+  /* CONTACT */
+
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+
+  .contact-info p {
+    font-size: larger;
+  }
+
+  .contact-icon {
+    cursor:defautlt;
+  }
+
+  /* FOOTER */
+
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+
+  footer p {
+    text-align: center;
+  }
