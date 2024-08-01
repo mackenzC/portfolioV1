@@ -15,7 +15,7 @@
 </head>
 <body>
     <nav id="navbar">
-        <div class="logo">Mackenzie Chung</div>
+        <div class="logo">Mackenzie <span>Chung</span></div>
         <div>
             <ul class="nav-link">
                 <li><a href="#about">About</a></li>
@@ -39,13 +39,13 @@
             </div> 
         </div>
     </nav>
-    <section id="profile">
+    <section id="profile" class="scroll-section">
         <div class="pic-container">
-            <img src="https://i.pinimg.com/originals/c1/8c/d4/c18cd45e0a80bd5622a5724000e7f71e.gif" alt="Dancing chicken">
+             <img src="HomeProfile.gif" alt="Profile pixel">
         </div>
         <div class="profile-text">
             <p class="text-1">Hello, I'm</p>
-            <h1 class="title">Mackenzie Chung</h1>
+            <h1 class="title">Mackenzie <span>Chung</span></h1>
             <p class="text-2">Welcome to my portfolio!</p>
             <div class="btn-container">
                 <button class="btn btn-2"onClick="window.open('./assets/resumeMC.pdf')">Resume</button>
@@ -68,33 +68,42 @@
         </div>
 
     </section>
-    <section id="about">
+    <section id="about" class="scroll-section">
         <div class="heading-container" >
             <div class="heading-text" data-aos="fade-up">
                 <h1>About</h1>
             </div>          
             <div class="profile-whole">
                 <div class="profile-pic-about" data-aos="fade-left" data-aos-delay="150">
-                    <img src="https://pic.chinesefontdesign.com/uploads/2017/03/chinesefontdesign.com_2017-03-17_16-07-17.gif" alt="Dancing chicken 2">
+                    <img src="AboutPic.gif" alt="walking">
                 </div>
-                <div class="profile-text-about" data-aos="fade-right" data-aos-delay="250">
-                    <p>I'm Mackenzie, a student of Brandeis University.
-                        I'm a Computer Science major and a Mathematics minor.</p>
+                <div class="profile-text-about" data-aos="fade-down" data-aos-delay="250">
+                    <p>I'm Mackenzie, a student of Brandeis University, and 
+                        I'm a Computer Science major who likes to dabble in art.</p>
                     <br />
-                    <p>I love to draw and create art in my free time. One of my 
-                        favorite campus activities are the weekly pottery hours 
-                        hosted by the Brandeis Pottery Club. 
+                    <p>I love to draw and create art during my free time — Sometimes, I even make my own pixel art and animations
+                        for small game projects! I'm always looking for ways to combine my love for art and programming.</p>
                     </p>
                     <br />
             </div>
         </div>
     </section>
-    <section id="projects">
+    <section id="projects" class="scroll-section">
         <div class="heading-container">
             <div class="heading-text" data-aos="fade-up">
                 <h1>Projects</h1>
+            </div>
+            <!-- <div class="project-item">
+                <div class="project-image" data-aos="fade-right">
+                    <img src="WebsiteScr.png" alt="Website portfolio"> -->
+            </div>
+            <div class="project-description" data-aos="fade-left">
+                <h2>Portfolio Website</h2>
+                <p>My personal portfolio website! (The one that you are currently on.)</p>
+                <a href="#navbar" class="view-btn">View Project</a>
+
     </section>
-    <section id="contact">
+    <section id="contact" class="scroll-section">
         <div class="heading-container">
             <div class="heading-text" data-aos="fade-up">
                 <h1>Contact</h1>
@@ -128,12 +137,13 @@
                 <p>GitHub</p>
             </div>
         </section>
-    <footer>
+    <footer id="footer">
         <nav id="navbar">
           <ul class="nav-link">
+                <li><a href="#navbar">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </nav>
         <p>@ Mackenzie Chung 2024</p>

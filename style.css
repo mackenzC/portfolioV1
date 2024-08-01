@@ -8,7 +8,11 @@ body {
 }
  
 html {
-    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+span {
+    color: green;
 }
 
 a, .btn {
@@ -22,12 +26,23 @@ body {
 }
 nav, .nav-link {
     display:flex;
+    
 }
 
 nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    /* position: sticky; */
+    /* top: 0;
+    padding: 1.5em 0 1.5em 5em;
+    transition: background-color 0.5s ease-in-out; */
+
+}
+
+nav.scrolled {
+  background-color: yellowgreen;
+  opacity: 0.98;
 }
 
 .nav-link {
@@ -148,19 +163,20 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
-/* SECTIONS */
+/* SECTIONS */  
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .section-container {
   display: flex;
 }
+
 /* PROFILE */
 
 #profile {
@@ -172,8 +188,8 @@ section {
 
 .pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: auto;
+  width: 370px;
   margin: auto 0;
 }
 
@@ -227,7 +243,7 @@ section {
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
 }
 
 .btn-1, 
@@ -240,8 +256,7 @@ section {
   cursor: pointer;
 }
 
-.btn-1, 
-.btn-2:hover {
+.btn-1 {
   background: black;
   color: white;
 }
@@ -256,6 +271,8 @@ section {
 
 .btn-2:hover {
     border:white 0.1rem solid;
+    background: green;
+    color: white;
 }
 
 .btn-container {
@@ -269,7 +286,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    height: 80vh;
+    height: 100vh;
 }
 
 .profile-whole {
@@ -283,15 +300,49 @@ section {
   }
   
   .profile-pic-about {
-    width: 100%;
-    max-width: 180px;
+    align-items: center;
     margin: auto;
-    padding-right: 3rem;
+    padding-bottom: 5rem;
   }
   
-  .profile p {
-    font-size: 2rem;
+
+  .profile-text-about {
+    text-align: left;
+    font-size: 1.5rem;
   }
+  
+  /* PROJECTS */
+
+  #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .project-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem auto;
+  }
+
+  .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .project-image {
+    margin-right: 5rem;
+    flex: 1;
+  }
+
+
+
+
   
   /* CONTACT */
 
