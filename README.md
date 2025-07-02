@@ -1,3 +1,1 @@
-# mackenzc.github.io
-
-Website Portfolio
+Website Portfolio v1
